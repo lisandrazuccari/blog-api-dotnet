@@ -93,7 +93,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/lisandrazuccari/blog-api-dotnet/blob/8700f3a5333fa9de361074d3273bc253aca57744/LICENCE.md) file for details
 
 ## 📧 Contact
 
