@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using BlogAPI.Models;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace BlogAPI.Data
 {
@@ -23,9 +24,13 @@ namespace BlogAPI.Data
 
                 entity.Property(e => e.Tags)
                     .HasConversion(
-                        v => string.Join(',', v),
-                        v => v.Split(',', StringSplitOptions.RemoveEmptyEntries).ToList()
-                    );
+                        v => v == null ? null: string.Join(',', v),
+                        v => v == null ? new List<string>() : v.Split(',', StringSplitOptions.RemoveEmptyEntries).ToList()
+                    )
+                    .Metadata.SetValueComparer(new ValueComparer<List<string>>(
+                        (c1, c2) => (c1 == null && c2 == null) || (c1 != null && c2 != null && c1.SequenceEqual(c2)),
+                        c => c == null ? 0 : c.Aggregate(0, (a, v) => HashCode.Combine(a, v.GetHashCode())),
+                        c => c == null ? new List<string>() : c.ToList()));
             });
         }
     }
