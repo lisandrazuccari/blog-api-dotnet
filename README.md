@@ -68,7 +68,7 @@ The API will be available at `http://localhost:5000`
 
 ```bash
 # Create a new post
-curl -X POST "http://localhost:5000/api/blogposts" \
+curl -L -X POST "http://localhost:5000/api/blogposts" \
      -H "Content-Type: application/json" \
      -d "{\"title\":\"Hello World\",\"content\":\"First post!\"}"
 ```
@@ -93,7 +93,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/lisandrazuccari/blog-api-dotnet/blob/8700f3a5333fa9de361074d3273bc253aca57744/LICENCE.md) file for details
 
 ## 📧 Contact
 

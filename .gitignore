@@ -1,28 +1,64 @@
-# .NET Core
+# Ignore build output and artifacts
 bin/
 obj/
-*.user
-*.userosscache
-*.sln.docstates
 
-# Visual Studio files
-.vs/
-.vscode/
+# User-specific files
+*.rsuser
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
-*.userprefs
 
-# Environment Settings
-appsettings.Development.json
-appsettings.Production.json
-*.local.json
+# ASP.NET environment settings
+.env
+.env.*.local
 
 # Logs
-logs/
 *.log
+logs/
+log/
 
-# Dependencies
+# Visual Studio Code settings
+.vscode/
+
+# Rider IDE files
+.idea/
+
+# Visual Studio working folder and generated files
+.vs/
+.vscode/
+.vscode/*
+
+# Resharper files
+_ReSharper*/
+*.DotSettings.user
+
+# NuGet packages
 packages/
 *.nupkg
+project.lock.json
+project.fragment.lock.json
+
+# ASP.NET Core secrets and configurations
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+
+# DotNet dev certs
+*.pfx
+*.p12
+
+# Exclude publish output
+wwwroot/
+wwwroot/dist/
+
+# Mac specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Linux specific files
+*.swp
