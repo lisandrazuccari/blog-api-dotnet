@@ -29,7 +29,7 @@ A RESTful API for managing blog posts built with ASP.NET Core 8.0 and Entity Fra
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/blog-api-dotnet.git
+git clone https://github.com/lisandrazuccari/blog-api-dotnet.git
 ```
 
 2. Navigate to the project directory
