@@ -34,7 +34,7 @@ git clone https://github.com/yourusername/blog-api-dotnet.git
 
 2. Navigate to the project directory
 ```bash
-cd blog-api
+cd blog-api-dotnet
 ```
 
 3. Install dependencies
